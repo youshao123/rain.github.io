@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Hexo博客搭建</title>
+      <link href="2020/12/31/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-1/"/>
+      <url>2020/12/31/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-1/</url>
+      
+        <content type="html"><![CDATA[<p>emrm</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="2020/12/30/hello-world/"/>
       <url>2020/12/30/hello-world/</url>
