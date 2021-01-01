@@ -533,7 +533,7 @@
 <span class="token operator">&lt;</span>setting <span class="token assign-left variable">id</span><span class="token operator">=</span><span class="token string">"80"</span> <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">"disable_voicetrigger"</span> <span class="token assign-left variable">value</span><span class="token operator">=</span><span class="token string">"0"</span> <span class="token assign-left variable">package</span><span class="token operator">=</span><span class="token string">"com.miui.securitycenter"</span> <span class="token assign-left variable">defaultValue</span><span class="token operator">=</span><span class="token string">"0"</span> <span class="token assign-left variable">defaultSysSet</span><span class="token operator">=</span><span class="token string">"true"</span> /<span class="token operator">&gt;</span>
 <span class="token operator">&lt;</span>setting <span class="token assign-left variable">id</span><span class="token operator">=</span><span class="token string">"34"</span> <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">"notification_badging"</span> <span class="token assign-left variable">value</span><span class="token operator">=</span><span class="token string">"1"</span> <span class="token assign-left variable">package</span><span class="token operator">=</span><span class="token string">"android"</span> <span class="token assign-left variable">defaultValue</span><span class="token operator">=</span><span class="token string">"1"</span> <span class="token assign-left variable">defaultSysSet</span><span class="token operator">=</span><span class="token string">"true"</span> /<span class="token operator">&gt;</span>
 <span class="token operator">&lt;</span>setting <span class="token assign-left variable">id</span><span class="token operator">=</span><span class="token string">"15"</span> <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">"screensaver_components"</span> <span class="token assign-left variable">value</span><span class="token operator">=</span><span class="token string">"com.google.android.deskclock/com.android.deskclock.Screensaver"</span> <span class="token assign-left variable">package</span><span class="token operator">=</span><span class="token string">"android"</span> <span class="token assign-left variable">defaultValue</span><span class="token operator">=</span><span class="token string">"com.google.android.deskclock/com.android.deskclock.Screensaver"</span> <span class="token assign-left variable">defaultSysSet</span><span class="token operator">=</span><span class="token string">"true"</span> /<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>下载地址：<a target="_blank" rel="noopener" href="https://wwa.lanzous.com/iINUWi9n8ib">Android跳Google开机验证</a></p>
+<h2 id="下载地址："><a href="#下载地址：" class="headerlink" title="下载地址："></a>下载地址：</h2><p><a target="_blank" rel="noopener" href="https://wwa.lanzous.com/iINUWi9n8ib">Android跳Google开机验证</a></p>
 
                 
             </div>
@@ -1237,6 +1237,34 @@ $(function () {
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
+    
+        <script src="//code.tidio.co/de1zlgrbmwjpsevxh5ifhblnict7p8qz.js"></script>
+        <script>
+            $(document).ready(function () {
+                setInterval(change_Tidio, 50);
+                function change_Tidio() {
+                    var tidio=$("#tidio-chat iframe");
+                    if(tidio.css("display")=="block"&& $(window).width()>977 ){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" &&$(window).width()>977)>0? "-40px" : ($("div.toc-title").length&&$(window).width()>977)>0?"85px":"20px";
+                        document.getElementById("tidio-chat-iframe").style.right="-15px";
+                        document.getElementById("tidio-chat-iframe").style.height=parseInt(tidio.css("height"))>=520?"520px":tidio.css("height");
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    else if(tidio.css("display")=="block"&&$(window).width()>601 &&$(window).width()<992 ){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && 601< $(window).width()<992)>0? "-40px":"20px" ;
+                        document.getElementById("tidio-chat-iframe").style.right="-15px";
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    else if(tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))<230){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && $(window).width()<601)>0? "-10px":"45px" ;
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    if( tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))>=230){
+                        document.getElementById("tidio-chat-iframe").style.zIndex="998";
+                    }
+                }
+            });
+        </script>
     
 
     
